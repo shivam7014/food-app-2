@@ -36,7 +36,7 @@ userRouter
 // upload-> storage , filter
 const multerStorage=multer.diskStorage({
     destination:function(req,file,cb){
-        cb(null,'public/images')
+        cb(null,'public/Images')
     },
     filename:function(req,file,cb){
         cb(null,`user-${Date.now()}.jpeg`)
